@@ -1,0 +1,187 @@
+    <!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Robert den Harink">
+		<meta name="description" content="Developer/Designer, I like solving problems">
+		<meta name="generator" content="Hugo 0.15" />
+		<title>Prevent encoding issues with mysqldump &middot; Robert</title>
+		<link rel="shortcut icon" href="http://robhar.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://robhar.com/css/style.css">
+		<link rel="stylesheet" href="http://robhar.com/css/highlight.css">
+		
+		<link rel="stylesheet" href="http://robhar.com/css/style.css">
+		
+
+		
+		<link rel="stylesheet" href="http://robhar.com/css/monosocialiconsfont.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://robhar.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='http://robhar.com/about/'>About</a>
+	
+		<a href='http://robhar.com/page/pgp/'>PGP</a>
+	
+
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>Prevent encoding issues with mysqldump</h1>
+                    <h2 class="headline">
+                    February 4, 2016 
+                    <br>
+                    
+                    
+                        
+                            <a href="http://robhar.com/tags/code">code</a>
+                        
+                            <a href="http://robhar.com/tags/database">database</a>
+                        
+                    
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    <p>When exporting a database with mysqldump you can corrupt the encoding pretty easily.</p>
+
+<p>take:</p>
+
+<pre><code>mysqldump -u user -p database &gt; dump.sql
+</code></pre>
+
+<p>the above command is simple and effective but it doesn&rsquo;t care about encodings and redirects the output to a file instead of to standard output.</p>
+
+<p>To make the command care about encodings we can use the following options:</p>
+
+<ul>
+<li>default-character-set: ensures the character-set for each field</li>
+<li>result-file: prevents data from passing through the operating system which has its own encoding and might mess up the dump data.</li>
+</ul>
+
+<p>With the new options it looks like this:</p>
+
+<pre><code>mysqldump -u user -p --default-character-set utf8 --result-file database.sql database
+</code></pre>
+
+<p>this way you can always asure the right encoding and save yourself some headaches!</p>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                <a href="https://twitter.com/@rauwekost">
+                        <img class="avatar" src="http://robhar.com/images/avatar.png">
+                        <div>
+                            <span class="dark">Robert den Harink</span>
+                            <span></span>
+                        </div>
+                    </a>
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2frobhar.com%2fpost%2fprevent-encoding-issues-with-mysqldump%2f - Prevent%20encoding%20issues%20with%20mysqldump by @%40rauwekost"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="http://robhar.com/post/prevent-encoding-issues-with-mysqldump/">Prevent encoding issues with mysqldump<aside class="dates">Feb 4</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://robhar.com/post/install-collectd-on-centos/">Install collectd on centos<aside class="dates">Jan 17</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://robhar.com/post/self-signed-certificates-for-development/">Self signed certificates for development<aside class="dates">Nov 23</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://robhar.com/post/curlloader-on-ubuntu-14.04/">Curlloader on ubuntu 14.04<aside class="dates">Nov 10</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://robhar.com/post/do-you-like-to-party/">Do you like to party ?!<aside class="dates">Aug 5</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/rauwekost">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/rauwekost">
+        circletwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 Robert den Harink
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://robhar.com/js/main.js"></script>
+<script src="http://robhar.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://robhar.com/</loc>
+    <lastmod>2016-06-03T14:52:23+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://robhar.com/about/</loc>
+    <lastmod>2016-06-03T14:52:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://robhar.com/page/pgp/</loc>
+    <lastmod>2016-06-03T14:49:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</loc>
+    <lastmod>2016-02-04T21:07:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://robhar.com/post/install-collectd-on-centos/</loc>
+    <lastmod>2016-01-17T21:12:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://robhar.com/post/self-signed-certificates-for-development/</loc>
+    <lastmod>2015-11-23T21:16:29+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://robhar.com/post/curlloader-on-ubuntu-14.04/</loc>
+    <lastmod>2015-11-10T22:48:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://robhar.com/post/do-you-like-to-party/</loc>
+    <lastmod>2015-08-05T12:55:07+02:00</lastmod>
+  </url>
+  
+</urlset>

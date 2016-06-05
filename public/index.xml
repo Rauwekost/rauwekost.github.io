@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robert</title>
+    <link>http://robhar.com/</link>
+    <description>Recent content on Robert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jun 2016 14:52:23 +0200</lastBuildDate>
+    <atom:link href="http://robhar.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://robhar.com/about/</link>
+      <pubDate>Fri, 03 Jun 2016 14:52:23 +0200</pubDate>
+      
+      <guid>http://robhar.com/about/</guid>
+      <description>&lt;p&gt;Hello, My name is Robert den Harink. I&amp;rsquo;m a software developer from the Netherlands. &lt;br /&gt; I keep this blog to remember things and share interesting rubbish for your entertainment.&lt;/p&gt;
+
+&lt;p&gt;I like functional programming, Linux, graphic design, creating funky music with Ableton/vintage-organs and traveling in my old &amp;lsquo;krankenwagen&amp;rsquo; — that&amp;rsquo;s german for ambulance.&lt;/p&gt;
+
+&lt;p&gt;Currently i work for a company that builds software for the Dutch government. I take care of architecture
+and security. I&amp;rsquo;m also available as freelancer&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you have questions/comments or you just want to say hi, drop me a message and i&amp;rsquo;ll get back at you.&lt;/p&gt;
+
+&lt;p&gt;To generate my contact information please run one of the scripts below&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Haskell&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;-- Generate contact information for Robert den Harink
+-- http://www.robhar.com
+
+import Data.Char (ord, chr)
+
+crypt :: (Char -&amp;gt; Char -&amp;gt; Int) -&amp;gt; String -&amp;gt; String -&amp;gt; String
+crypt f key = map toLetter . zipWith f (cycle key)
+    where toLetter = chr . (+) (ord &#39;.&#39;)
+
+enc :: Char -&amp;gt; Char -&amp;gt; Int
+enc k c = (base k + base c) `mod` 77
+    where base c = (ord c) - (ord &#39;.&#39;)
+
+dec :: Char -&amp;gt; Char -&amp;gt; Int
+dec k c = (base c - base k) `mod` 77
+    where base c = (ord c) - (ord &#39;.&#39;)
+
+encrypt = crypt enc
+decrypt = crypt dec
+
+main :: IO()
+main = putStrLn $ decrypt &amp;quot;secret&amp;quot; &amp;quot;jYJ\\\\m8\\WYRZjeKfWuumjtmx.imt&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Go&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-golang&#34;&gt;// Generate contact information for Robert den Harink
+// http://www.robhar.com
+package main
+
+import &amp;quot;fmt&amp;quot;
+
+const (
+    start = &#39;.&#39;
+    end   = &#39;z&#39;
+)
+
+type key string
+
+func main() {
+    k := key(&amp;quot;secret&amp;quot;)
+    decrypted := k.decrypt([]byte(&amp;quot;kZK]]n9]XZS[keLgXuumjtmx/imt&amp;quot;))
+    fmt.Println(string(decrypted))
+}
+
+func (k key) encrypt(tx []byte) []byte {
+    ct := tx
+    for i, c := range ct {
+            ct[i] = start + (c-start+k[i%len(k)]-start)%(end-start)
+    }
+
+    return ct
+}
+
+func (k key) decrypt(tx []byte) []byte {
+    pt := tx
+    for i, c := range pt {
+            pt[i] = start + (c-k[i%len(k)]+(end-start))%(end-start)
+    }
+
+    return pt
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PGP</title>
+      <link>http://robhar.com/page/pgp/</link>
+      <pubDate>Fri, 03 Jun 2016 14:49:47 +0200</pubDate>
+      
+      <guid>http://robhar.com/page/pgp/</guid>
+      <description>&lt;code&gt;
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+&lt;br /&gt;&lt;br /&gt;
+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
+g+9amCmdNh0aMBcW/LzT
+=xdQN&lt;br /&gt;
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;/code&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prevent encoding issues with mysqldump</title>
+      <link>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</link>
+      <pubDate>Thu, 04 Feb 2016 21:07:00 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</guid>
+      <description>&lt;p&gt;When exporting a database with mysqldump you can corrupt the encoding pretty easily.&lt;/p&gt;
+
+&lt;p&gt;take:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysqldump -u user -p database &amp;gt; dump.sql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the above command is simple and effective but it doesn&amp;rsquo;t care about encodings and redirects the output to a file instead of to standard output.&lt;/p&gt;
+
+&lt;p&gt;To make the command care about encodings we can use the following options:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;default-character-set: ensures the character-set for each field&lt;/li&gt;
+&lt;li&gt;result-file: prevents data from passing through the operating system which has its own encoding and might mess up the dump data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With the new options it looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysqldump -u user -p --default-character-set utf8 --result-file database.sql database
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;this way you can always asure the right encoding and save yourself some headaches!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install collectd on centos</title>
+      <link>http://robhar.com/post/install-collectd-on-centos/</link>
+      <pubDate>Sun, 17 Jan 2016 21:12:00 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/install-collectd-on-centos/</guid>
+      <description>&lt;p&gt;A couple of days ago i had to install and configure collectd on a old centos machine. We used collectd in combination with Riemann, so i had to install protobuf-c as well.
+here is a quick script to install the necessary components:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+# Perform installation as root
+
+#you need epel to quickly install protobuf-c (riemann_write)
+#sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+
+# Install prereqs
+yum -y install libcurl libcurl-devel rrdtool rrdtool-devel rrdtool-prel libgcrypt-devel gcc make gcc-c++ yajl yajl-devel protobuf-c protobuf-c-devel
+
+# Get Collectd, untar it, make it and install
+wget http://collectd.org/files/collectd-5.4.0.tar.gz
+tar zxvf collectd-5.4.0.tar.gz
+cd collectd-5.4.0
+./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libdir=/usr/lib --mandir=/usr/share/man --enable-all-plugins
+make
+make install
+
+# Copy the init.d script
+cp /root/collectd-5.4.0/contrib/redhat/init.d-collectd /etc/init.d/collectd
+
+# Set the correct permissions
+chmod +x /etc/init.d/collectd
+
+# Start the deamon
+service collectd start
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Self signed certificates for development</title>
+      <link>http://robhar.com/post/self-signed-certificates-for-development/</link>
+      <pubDate>Mon, 23 Nov 2015 21:16:29 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/self-signed-certificates-for-development/</guid>
+      <description>
+
+&lt;p&gt;A quick reminder on how to create self-signed certificates for testing purposes.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-generate-a-private-key:cc14cf1237ec73cd5fe9e787d996c646&#34;&gt;1. Generate a Private Key&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl genrsa -des3 -out server.key 1024
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;create-csr-certificate-signing-request:cc14cf1237ec73cd5fe9e787d996c646&#34;&gt;Create CSR (Certificate Signing Request)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl req -new -sha256 -key server.key -out server.csr
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-optional-remove-passphrase:cc14cf1237ec73cd5fe9e787d996c646&#34;&gt;3. (optional) Remove passphrase&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;cp server.key server.key.org
+openssl rsa -in server.key.org -out server.key
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;4-generate-self-signed-certificate:cc14cf1237ec73cd5fe9e787d996c646&#34;&gt;4. Generate self-signed certificate&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Curlloader on ubuntu 14.04</title>
+      <link>http://robhar.com/post/curlloader-on-ubuntu-14.04/</link>
+      <pubDate>Tue, 10 Nov 2015 22:48:24 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/curlloader-on-ubuntu-14.04/</guid>
+      <description>
+
+&lt;p&gt;How to simulate load using curl-loader on ubuntu 14.04&lt;/p&gt;
+
+&lt;h2 id=&#34;install:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;&lt;strong&gt;Install&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;download curl-loader from &lt;a href=&#34;http://curl-loader.sourceforge.net&#34;&gt;http://curl-loader.sourceforge.net&lt;/a&gt; and &lt;code&gt;scp&lt;/code&gt; it to the ubuntu host.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;#install build tools
+apt-get install libssl-dev build-essential
+
+#unarchive
+bunzip2 curl-loader-0.56.tar.bz2
+tar xvf curl-loader-0.56.tar
+
+#make, install
+cd curl-loader-0.56
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;tune-the-system:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Tune the system&lt;/h4&gt;
+
+&lt;p&gt;Update some system settings as the quick start describes&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#file limits
+ulimit -n 10000
+echo 1 &amp;gt; /proc/sys/net/ipv4/tcp_tw_reuse
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This completes the installation&lt;/p&gt;
+
+&lt;h2 id=&#34;using-curlloader:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;&lt;strong&gt;Using curlloader&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h4 id=&#34;example-configuration:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Example Configuration&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;########### GENERAL SECTION ################################
+CLIENTS_NUM_MAX=100
+CLIENTS_NUM_START=2
+CLIENTS_RAMPUP_INC=5
+INTERFACE=eth0 #(depending on ifconfig)
+NETMASK=16
+
+IP_ADDR_MIN= &amp;lt;ifconfig-result&amp;gt;
+IP_ADDR_MAX= &amp;lt;ifconfig-result&amp;gt;
+IP_SHARED_NUM=100
+
+########### URL SECTION ####################################
+URL=http://&amp;lt;your-url&amp;gt;
+URL_SHORT_NAME=&amp;quot;my-site&amp;quot;
+REQUEST_TYPE=GET
+TIMER_URL_COMPLETION = 5000
+TIMER_AFTER_URL_SLEEP = 500
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Check the curlloader documentation or example config files for more detailed information.&lt;/p&gt;
+
+&lt;h4 id=&#34;let-s-run-a-test:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Let&amp;rsquo;s run a test!&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;curl-loader -f &amp;lt;config-file-path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;reading-the-output:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Reading the output&lt;/h4&gt;
+
+&lt;p&gt;After the test completes (or gets cancelled) the following files become available:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;yourname.txt&lt;/li&gt;
+&lt;li&gt;yourname.ops&lt;/li&gt;
+&lt;li&gt;yourname.log&lt;/li&gt;
+&lt;li&gt;yourname.ctx&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+The one that gives the most information is the &lt;code&gt;.txt&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;RunTime(sec),Appl,Clients,Req,1xx,2xx,3xx,4xx,5xx,Err,T-Err,D,D-2xx,Ti,To
+0, H/F   , 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+0, H/F/S , 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+3, H/F   , 11, 25, 0, 14, 0, 0, 0, 0, 0, 829, 829, 177426, 1528
+3, H/F/S , 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+6, H/F   , 26, 33, 0, 19, 0, 0, 0, 0, 0, 1722, 1722, 208880, 2012
+6, H/F/S , 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+9, H/F   , 41, 39, 0, 23, 0, 0, 0, 0, 0, 3002, 3002, 285667, 2386
+9, H/F/S , 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+12, H/F   , 50, 27, 0, 18, 0, 0, 0, 0, 0, 4116, 4116, 204675, 1650
+12, H/F/S , 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+15, H/F   , 50, 13, 0, 13, 0, 0, 0, 0, 0, 5670, 5670, 179276, 798
+*, *, *, *, *, *, *, *, *, *, *, *, *, *
+RunTime(sec),Appl,Clients,Req,1xx,2xx,3xx,4xx,5xx,Err,T-Err,D,D-2xx,Ti,To
+48, H/F   , 50, 359, 0, 252, 0, 0, 57, 0, 0, 6302, 5465, 195592, 1373
+48, H/F/S , 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;output-explination:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Output explination&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;run-time in seconds;&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;requests num;&lt;/li&gt;
+&lt;li&gt;1xx success num;&lt;/li&gt;
+&lt;li&gt;2xx success num;&lt;/li&gt;
+&lt;li&gt;3xx redirects num;&lt;/li&gt;
+&lt;li&gt;client 4xx errors num;&lt;/li&gt;
+&lt;li&gt;server 5xx errors num;&lt;/li&gt;
+&lt;li&gt;other errors num, like resolving, tcp-connect, server closing or empty responses number (Err);&lt;/li&gt;
+&lt;li&gt;url completion time expiration errors (T-Err);&lt;/li&gt;
+&lt;li&gt;average application server Delay (msec), estimated as the time between HTTP request and HTTP response without taking into the account network latency (RTT) (D);&lt;/li&gt;
+&lt;li&gt;average application server Delay for 2xx (success) HTTP-responses, as above, but only for 2xx responses. The motivation for that is that 3xx redirections and 5xx server errors/rejects may not necessarily provide a true indication of a testing server working functionality (D-2xx);&lt;/li&gt;
+&lt;li&gt;throughput in, batch average, Bytes/sec (T-In);&lt;/li&gt;
+&lt;li&gt;throughput out, batch average, Bytes/sec (T-Out);&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Do you like to party ?!</title>
+      <link>http://robhar.com/post/do-you-like-to-party/</link>
+      <pubDate>Wed, 05 Aug 2015 12:55:07 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/do-you-like-to-party/</guid>
+      <description>&lt;p&gt;This is the result of instruments, time, beers and a sunday afternoon.&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215560593&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
