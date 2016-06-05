@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Robert</title>
-    <link>http://robhar.com/tags/security/</link>
+    <link>http://rauwekost.github.io/tags/security/</link>
     <description>Recent content in Security on Robert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Nov 2015 21:16:29 +0200</lastBuildDate>
-    <atom:link href="http://robhar.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rauwekost.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Self signed certificates for development</title>
-      <link>http://robhar.com/post/self-signed-certificates-for-development/</link>
+      <link>http://rauwekost.github.io/post/self-signed-certificates-for-development/</link>
       <pubDate>Mon, 23 Nov 2015 21:16:29 +0200</pubDate>
       
-      <guid>http://robhar.com/post/self-signed-certificates-for-development/</guid>
+      <guid>http://rauwekost.github.io/post/self-signed-certificates-for-development/</guid>
       <description>
 
 &lt;p&gt;A quick reminder on how to create self-signed certificates for testing purposes.&lt;/p&gt;

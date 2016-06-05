@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Robert</title>
-    <link>http://robhar.com/tags/linux/</link>
+    <link>http://rauwekost.github.io/tags/linux/</link>
     <description>Recent content in Linux on Robert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Jan 2016 21:12:00 +0200</lastBuildDate>
-    <atom:link href="http://robhar.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rauwekost.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Install collectd on centos</title>
-      <link>http://robhar.com/post/install-collectd-on-centos/</link>
+      <link>http://rauwekost.github.io/post/install-collectd-on-centos/</link>
       <pubDate>Sun, 17 Jan 2016 21:12:00 +0200</pubDate>
       
-      <guid>http://robhar.com/post/install-collectd-on-centos/</guid>
+      <guid>http://rauwekost.github.io/post/install-collectd-on-centos/</guid>
       <description>&lt;p&gt;A couple of days ago i had to install and configure collectd on a old centos machine. We used collectd in combination with Riemann, so i had to install protobuf-c as well.
 here is a quick script to install the necessary components:&lt;/p&gt;
 
@@ -49,10 +49,10 @@ service collectd start
     
     <item>
       <title>Curlloader on ubuntu 14.04</title>
-      <link>http://robhar.com/post/curlloader-on-ubuntu-14.04/</link>
+      <link>http://rauwekost.github.io/post/curlloader-on-ubuntu-14.04/</link>
       <pubDate>Tue, 10 Nov 2015 22:48:24 +0200</pubDate>
       
-      <guid>http://robhar.com/post/curlloader-on-ubuntu-14.04/</guid>
+      <guid>http://rauwekost.github.io/post/curlloader-on-ubuntu-14.04/</guid>
       <description>
 
 &lt;p&gt;How to simulate load using curl-loader on ubuntu 14.04&lt;/p&gt;

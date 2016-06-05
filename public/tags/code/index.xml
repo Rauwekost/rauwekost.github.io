@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on Robert</title>
-    <link>http://robhar.com/tags/code/</link>
+    <link>http://rauwekost.github.io/tags/code/</link>
     <description>Recent content in Code on Robert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Feb 2016 21:07:00 +0200</lastBuildDate>
-    <atom:link href="http://robhar.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rauwekost.github.io/tags/code/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Prevent encoding issues with mysqldump</title>
-      <link>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</link>
+      <link>http://rauwekost.github.io/post/prevent-encoding-issues-with-mysqldump/</link>
       <pubDate>Thu, 04 Feb 2016 21:07:00 +0200</pubDate>
       
-      <guid>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</guid>
+      <guid>http://rauwekost.github.io/post/prevent-encoding-issues-with-mysqldump/</guid>
       <description>&lt;p&gt;When exporting a database with mysqldump you can corrupt the encoding pretty easily.&lt;/p&gt;
 
 &lt;p&gt;take:&lt;/p&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>Install collectd on centos</title>
-      <link>http://robhar.com/post/install-collectd-on-centos/</link>
+      <link>http://rauwekost.github.io/post/install-collectd-on-centos/</link>
       <pubDate>Sun, 17 Jan 2016 21:12:00 +0200</pubDate>
       
-      <guid>http://robhar.com/post/install-collectd-on-centos/</guid>
+      <guid>http://rauwekost.github.io/post/install-collectd-on-centos/</guid>
       <description>&lt;p&gt;A couple of days ago i had to install and configure collectd on a old centos machine. We used collectd in combination with Riemann, so i had to install protobuf-c as well.
 here is a quick script to install the necessary components:&lt;/p&gt;
 
@@ -80,10 +80,10 @@ service collectd start
     
     <item>
       <title>Self signed certificates for development</title>
-      <link>http://robhar.com/post/self-signed-certificates-for-development/</link>
+      <link>http://rauwekost.github.io/post/self-signed-certificates-for-development/</link>
       <pubDate>Mon, 23 Nov 2015 21:16:29 +0200</pubDate>
       
-      <guid>http://robhar.com/post/self-signed-certificates-for-development/</guid>
+      <guid>http://rauwekost.github.io/post/self-signed-certificates-for-development/</guid>
       <description>
 
 &lt;p&gt;A quick reminder on how to create self-signed certificates for testing purposes.&lt;/p&gt;
@@ -113,10 +113,10 @@ openssl rsa -in server.key.org -out server.key
     
     <item>
       <title>Curlloader on ubuntu 14.04</title>
-      <link>http://robhar.com/post/curlloader-on-ubuntu-14.04/</link>
+      <link>http://rauwekost.github.io/post/curlloader-on-ubuntu-14.04/</link>
       <pubDate>Tue, 10 Nov 2015 22:48:24 +0200</pubDate>
       
-      <guid>http://robhar.com/post/curlloader-on-ubuntu-14.04/</guid>
+      <guid>http://rauwekost.github.io/post/curlloader-on-ubuntu-14.04/</guid>
       <description>
 
 &lt;p&gt;How to simulate load using curl-loader on ubuntu 14.04&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Robert</title>
-    <link>http://robhar.com/</link>
+    <link>http://rauwekost.github.io/</link>
     <description>Recent content on Robert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Jun 2016 14:52:23 +0200</lastBuildDate>
-    <atom:link href="http://robhar.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rauwekost.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>
-      <link>http://robhar.com/about/</link>
+      <link>http://rauwekost.github.io/about/</link>
       <pubDate>Fri, 03 Jun 2016 14:52:23 +0200</pubDate>
       
-      <guid>http://robhar.com/about/</guid>
+      <guid>http://rauwekost.github.io/about/</guid>
       <description>&lt;p&gt;Hello, My name is Robert den Harink. I&amp;rsquo;m a software developer from the Netherlands. &lt;br /&gt; I keep this blog to remember things and share interesting rubbish for your entertainment.&lt;/p&gt;
 
 &lt;p&gt;I like functional programming, Linux, graphic design, creating funky music with Ableton/vintage-organs and traveling in my old &amp;lsquo;krankenwagen&amp;rsquo; — that&amp;rsquo;s german for ambulance.&lt;/p&gt;
@@ -98,10 +98,10 @@ func (k key) decrypt(tx []byte) []byte {
     
     <item>
       <title>PGP</title>
-      <link>http://robhar.com/page/pgp/</link>
+      <link>http://rauwekost.github.io/page/pgp/</link>
       <pubDate>Fri, 03 Jun 2016 14:49:47 +0200</pubDate>
       
-      <guid>http://robhar.com/page/pgp/</guid>
+      <guid>http://rauwekost.github.io/page/pgp/</guid>
       <description>&lt;code&gt;
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 &lt;br /&gt;&lt;br /&gt;
@@ -159,10 +159,10 @@ g+9amCmdNh0aMBcW/LzT
     
     <item>
       <title>Prevent encoding issues with mysqldump</title>
-      <link>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</link>
+      <link>http://rauwekost.github.io/post/prevent-encoding-issues-with-mysqldump/</link>
       <pubDate>Thu, 04 Feb 2016 21:07:00 +0200</pubDate>
       
-      <guid>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</guid>
+      <guid>http://rauwekost.github.io/post/prevent-encoding-issues-with-mysqldump/</guid>
       <description>&lt;p&gt;When exporting a database with mysqldump you can corrupt the encoding pretty easily.&lt;/p&gt;
 
 &lt;p&gt;take:&lt;/p&gt;
@@ -190,10 +190,10 @@ g+9amCmdNh0aMBcW/LzT
     
     <item>
       <title>Install collectd on centos</title>
-      <link>http://robhar.com/post/install-collectd-on-centos/</link>
+      <link>http://rauwekost.github.io/post/install-collectd-on-centos/</link>
       <pubDate>Sun, 17 Jan 2016 21:12:00 +0200</pubDate>
       
-      <guid>http://robhar.com/post/install-collectd-on-centos/</guid>
+      <guid>http://rauwekost.github.io/post/install-collectd-on-centos/</guid>
       <description>&lt;p&gt;A couple of days ago i had to install and configure collectd on a old centos machine. We used collectd in combination with Riemann, so i had to install protobuf-c as well.
 here is a quick script to install the necessary components:&lt;/p&gt;
 
@@ -228,10 +228,10 @@ service collectd start
     
     <item>
       <title>Self signed certificates for development</title>
-      <link>http://robhar.com/post/self-signed-certificates-for-development/</link>
+      <link>http://rauwekost.github.io/post/self-signed-certificates-for-development/</link>
       <pubDate>Mon, 23 Nov 2015 21:16:29 +0200</pubDate>
       
-      <guid>http://robhar.com/post/self-signed-certificates-for-development/</guid>
+      <guid>http://rauwekost.github.io/post/self-signed-certificates-for-development/</guid>
       <description>
 
 &lt;p&gt;A quick reminder on how to create self-signed certificates for testing purposes.&lt;/p&gt;
@@ -261,10 +261,10 @@ openssl rsa -in server.key.org -out server.key
     
     <item>
       <title>Curlloader on ubuntu 14.04</title>
-      <link>http://robhar.com/post/curlloader-on-ubuntu-14.04/</link>
+      <link>http://rauwekost.github.io/post/curlloader-on-ubuntu-14.04/</link>
       <pubDate>Tue, 10 Nov 2015 22:48:24 +0200</pubDate>
       
-      <guid>http://robhar.com/post/curlloader-on-ubuntu-14.04/</guid>
+      <guid>http://rauwekost.github.io/post/curlloader-on-ubuntu-14.04/</guid>
       <description>
 
 &lt;p&gt;How to simulate load using curl-loader on ubuntu 14.04&lt;/p&gt;
@@ -382,10 +382,10 @@ RunTime(sec),Appl,Clients,Req,1xx,2xx,3xx,4xx,5xx,Err,T-Err,D,D-2xx,Ti,To
     
     <item>
       <title>Do you like to party ?!</title>
-      <link>http://robhar.com/post/do-you-like-to-party/</link>
+      <link>http://rauwekost.github.io/post/do-you-like-to-party/</link>
       <pubDate>Wed, 05 Aug 2015 12:55:07 +0200</pubDate>
       
-      <guid>http://robhar.com/post/do-you-like-to-party/</guid>
+      <guid>http://rauwekost.github.io/post/do-you-like-to-party/</guid>
       <description>&lt;p&gt;This is the result of instruments, time, beers and a sunday afternoon.&lt;/p&gt;
 
 &lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215560593&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;

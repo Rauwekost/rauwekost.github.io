@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database on Robert</title>
-    <link>http://robhar.com/tags/database/</link>
+    <link>http://rauwekost.github.io/tags/database/</link>
     <description>Recent content in Database on Robert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Feb 2016 21:07:00 +0200</lastBuildDate>
-    <atom:link href="http://robhar.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rauwekost.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Prevent encoding issues with mysqldump</title>
-      <link>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</link>
+      <link>http://rauwekost.github.io/post/prevent-encoding-issues-with-mysqldump/</link>
       <pubDate>Thu, 04 Feb 2016 21:07:00 +0200</pubDate>
       
-      <guid>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</guid>
+      <guid>http://rauwekost.github.io/post/prevent-encoding-issues-with-mysqldump/</guid>
       <description>&lt;p&gt;When exporting a database with mysqldump you can corrupt the encoding pretty easily.&lt;/p&gt;
 
 &lt;p&gt;take:&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Robert</title>
-    <link>http://robhar.com/page/</link>
+    <link>http://rauwekost.github.io/page/</link>
     <description>Recent content in Pages on Robert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Jun 2016 14:49:47 +0200</lastBuildDate>
-    <atom:link href="http://robhar.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rauwekost.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PGP</title>
-      <link>http://robhar.com/page/pgp/</link>
+      <link>http://rauwekost.github.io/page/pgp/</link>
       <pubDate>Fri, 03 Jun 2016 14:49:47 +0200</pubDate>
       
-      <guid>http://robhar.com/page/pgp/</guid>
+      <guid>http://rauwekost.github.io/page/pgp/</guid>
       <description>&lt;code&gt;
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 &lt;br /&gt;&lt;br /&gt;
