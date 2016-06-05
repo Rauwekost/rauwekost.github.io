@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on Robert</title>
+    <link>http://robhar.com/tags/code/</link>
+    <description>Recent content in Code on Robert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Feb 2016 21:07:00 +0200</lastBuildDate>
+    <atom:link href="http://robhar.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Prevent encoding issues with mysqldump</title>
+      <link>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</link>
+      <pubDate>Thu, 04 Feb 2016 21:07:00 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</guid>
+      <description>&lt;p&gt;When exporting a database with mysqldump you can corrupt the encoding pretty easily.&lt;/p&gt;
+
+&lt;p&gt;take:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysqldump -u user -p database &amp;gt; dump.sql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the above command is simple and effective but it doesn&amp;rsquo;t care about encodings and redirects the output to a file instead of to standard output.&lt;/p&gt;
+
+&lt;p&gt;To make the command care about encodings we can use the following options:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;default-character-set: ensures the character-set for each field&lt;/li&gt;
+&lt;li&gt;result-file: prevents data from passing through the operating system which has its own encoding and might mess up the dump data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With the new options it looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysqldump -u user -p --default-character-set utf8 --result-file database.sql database
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;this way you can always asure the right encoding and save yourself some headaches!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install collectd on centos</title>
+      <link>http://robhar.com/post/install-collectd-on-centos/</link>
+      <pubDate>Sun, 17 Jan 2016 21:12:00 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/install-collectd-on-centos/</guid>
+      <description>&lt;p&gt;A couple of days ago i had to install and configure collectd on a old centos machine. We used collectd in combination with Riemann, so i had to install protobuf-c as well.
+here is a quick script to install the necessary components:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+# Perform installation as root
+
+#you need epel to quickly install protobuf-c (riemann_write)
+#sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+
+# Install prereqs
+yum -y install libcurl libcurl-devel rrdtool rrdtool-devel rrdtool-prel libgcrypt-devel gcc make gcc-c++ yajl yajl-devel protobuf-c protobuf-c-devel
+
+# Get Collectd, untar it, make it and install
+wget http://collectd.org/files/collectd-5.4.0.tar.gz
+tar zxvf collectd-5.4.0.tar.gz
+cd collectd-5.4.0
+./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libdir=/usr/lib --mandir=/usr/share/man --enable-all-plugins
+make
+make install
+
+# Copy the init.d script
+cp /root/collectd-5.4.0/contrib/redhat/init.d-collectd /etc/init.d/collectd
+
+# Set the correct permissions
+chmod +x /etc/init.d/collectd
+
+# Start the deamon
+service collectd start
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Self signed certificates for development</title>
+      <link>http://robhar.com/post/self-signed-certificates-for-development/</link>
+      <pubDate>Mon, 23 Nov 2015 21:16:29 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/self-signed-certificates-for-development/</guid>
+      <description>
+
+&lt;p&gt;A quick reminder on how to create self-signed certificates for testing purposes.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-generate-a-private-key:cc14cf1237ec73cd5fe9e787d996c646&#34;&gt;1. Generate a Private Key&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl genrsa -des3 -out server.key 1024
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;create-csr-certificate-signing-request:cc14cf1237ec73cd5fe9e787d996c646&#34;&gt;Create CSR (Certificate Signing Request)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl req -new -sha256 -key server.key -out server.csr
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-optional-remove-passphrase:cc14cf1237ec73cd5fe9e787d996c646&#34;&gt;3. (optional) Remove passphrase&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;cp server.key server.key.org
+openssl rsa -in server.key.org -out server.key
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;4-generate-self-signed-certificate:cc14cf1237ec73cd5fe9e787d996c646&#34;&gt;4. Generate self-signed certificate&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Curlloader on ubuntu 14.04</title>
+      <link>http://robhar.com/post/curlloader-on-ubuntu-14.04/</link>
+      <pubDate>Tue, 10 Nov 2015 22:48:24 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/curlloader-on-ubuntu-14.04/</guid>
+      <description>
+
+&lt;p&gt;How to simulate load using curl-loader on ubuntu 14.04&lt;/p&gt;
+
+&lt;h2 id=&#34;install:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;&lt;strong&gt;Install&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;download curl-loader from &lt;a href=&#34;http://curl-loader.sourceforge.net&#34;&gt;http://curl-loader.sourceforge.net&lt;/a&gt; and &lt;code&gt;scp&lt;/code&gt; it to the ubuntu host.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;#install build tools
+apt-get install libssl-dev build-essential
+
+#unarchive
+bunzip2 curl-loader-0.56.tar.bz2
+tar xvf curl-loader-0.56.tar
+
+#make, install
+cd curl-loader-0.56
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;tune-the-system:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Tune the system&lt;/h4&gt;
+
+&lt;p&gt;Update some system settings as the quick start describes&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#file limits
+ulimit -n 10000
+echo 1 &amp;gt; /proc/sys/net/ipv4/tcp_tw_reuse
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This completes the installation&lt;/p&gt;
+
+&lt;h2 id=&#34;using-curlloader:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;&lt;strong&gt;Using curlloader&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h4 id=&#34;example-configuration:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Example Configuration&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;########### GENERAL SECTION ################################
+CLIENTS_NUM_MAX=100
+CLIENTS_NUM_START=2
+CLIENTS_RAMPUP_INC=5
+INTERFACE=eth0 #(depending on ifconfig)
+NETMASK=16
+
+IP_ADDR_MIN= &amp;lt;ifconfig-result&amp;gt;
+IP_ADDR_MAX= &amp;lt;ifconfig-result&amp;gt;
+IP_SHARED_NUM=100
+
+########### URL SECTION ####################################
+URL=http://&amp;lt;your-url&amp;gt;
+URL_SHORT_NAME=&amp;quot;my-site&amp;quot;
+REQUEST_TYPE=GET
+TIMER_URL_COMPLETION = 5000
+TIMER_AFTER_URL_SLEEP = 500
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Check the curlloader documentation or example config files for more detailed information.&lt;/p&gt;
+
+&lt;h4 id=&#34;let-s-run-a-test:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Let&amp;rsquo;s run a test!&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;curl-loader -f &amp;lt;config-file-path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;reading-the-output:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Reading the output&lt;/h4&gt;
+
+&lt;p&gt;After the test completes (or gets cancelled) the following files become available:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;yourname.txt&lt;/li&gt;
+&lt;li&gt;yourname.ops&lt;/li&gt;
+&lt;li&gt;yourname.log&lt;/li&gt;
+&lt;li&gt;yourname.ctx&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+The one that gives the most information is the &lt;code&gt;.txt&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;RunTime(sec),Appl,Clients,Req,1xx,2xx,3xx,4xx,5xx,Err,T-Err,D,D-2xx,Ti,To
+0, H/F   , 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+0, H/F/S , 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+3, H/F   , 11, 25, 0, 14, 0, 0, 0, 0, 0, 829, 829, 177426, 1528
+3, H/F/S , 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+6, H/F   , 26, 33, 0, 19, 0, 0, 0, 0, 0, 1722, 1722, 208880, 2012
+6, H/F/S , 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+9, H/F   , 41, 39, 0, 23, 0, 0, 0, 0, 0, 3002, 3002, 285667, 2386
+9, H/F/S , 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+12, H/F   , 50, 27, 0, 18, 0, 0, 0, 0, 0, 4116, 4116, 204675, 1650
+12, H/F/S , 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+15, H/F   , 50, 13, 0, 13, 0, 0, 0, 0, 0, 5670, 5670, 179276, 798
+*, *, *, *, *, *, *, *, *, *, *, *, *, *
+RunTime(sec),Appl,Clients,Req,1xx,2xx,3xx,4xx,5xx,Err,T-Err,D,D-2xx,Ti,To
+48, H/F   , 50, 359, 0, 252, 0, 0, 57, 0, 0, 6302, 5465, 195592, 1373
+48, H/F/S , 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;output-explination:92cd37eb897314335f7caf5eb2272d2f&#34;&gt;Output explination&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;run-time in seconds;&lt;/li&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;requests num;&lt;/li&gt;
+&lt;li&gt;1xx success num;&lt;/li&gt;
+&lt;li&gt;2xx success num;&lt;/li&gt;
+&lt;li&gt;3xx redirects num;&lt;/li&gt;
+&lt;li&gt;client 4xx errors num;&lt;/li&gt;
+&lt;li&gt;server 5xx errors num;&lt;/li&gt;
+&lt;li&gt;other errors num, like resolving, tcp-connect, server closing or empty responses number (Err);&lt;/li&gt;
+&lt;li&gt;url completion time expiration errors (T-Err);&lt;/li&gt;
+&lt;li&gt;average application server Delay (msec), estimated as the time between HTTP request and HTTP response without taking into the account network latency (RTT) (D);&lt;/li&gt;
+&lt;li&gt;average application server Delay for 2xx (success) HTTP-responses, as above, but only for 2xx responses. The motivation for that is that 3xx redirections and 5xx server errors/rejects may not necessarily provide a true indication of a testing server working functionality (D-2xx);&lt;/li&gt;
+&lt;li&gt;throughput in, batch average, Bytes/sec (T-In);&lt;/li&gt;
+&lt;li&gt;throughput out, batch average, Bytes/sec (T-Out);&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

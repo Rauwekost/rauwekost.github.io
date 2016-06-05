@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on Robert</title>
+    <link>http://robhar.com/tags/database/</link>
+    <description>Recent content in Database on Robert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Feb 2016 21:07:00 +0200</lastBuildDate>
+    <atom:link href="http://robhar.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Prevent encoding issues with mysqldump</title>
+      <link>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</link>
+      <pubDate>Thu, 04 Feb 2016 21:07:00 +0200</pubDate>
+      
+      <guid>http://robhar.com/post/prevent-encoding-issues-with-mysqldump/</guid>
+      <description>&lt;p&gt;When exporting a database with mysqldump you can corrupt the encoding pretty easily.&lt;/p&gt;
+
+&lt;p&gt;take:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysqldump -u user -p database &amp;gt; dump.sql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the above command is simple and effective but it doesn&amp;rsquo;t care about encodings and redirects the output to a file instead of to standard output.&lt;/p&gt;
+
+&lt;p&gt;To make the command care about encodings we can use the following options:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;default-character-set: ensures the character-set for each field&lt;/li&gt;
+&lt;li&gt;result-file: prevents data from passing through the operating system which has its own encoding and might mess up the dump data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With the new options it looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysqldump -u user -p --default-character-set utf8 --result-file database.sql database
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;this way you can always asure the right encoding and save yourself some headaches!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,189 @@
+    <!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Robert den Harink">
+		<meta name="description" content="Developer/Designer, I like solving problems">
+		<meta name="generator" content="Hugo 0.15" />
+		<title>Self signed certificates for development &middot; Robert</title>
+		<link rel="shortcut icon" href="http://robhar.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://robhar.com/css/style.css">
+		<link rel="stylesheet" href="http://robhar.com/css/highlight.css">
+		
+		<link rel="stylesheet" href="http://robhar.com/css/style.css">
+		
+
+		
+		<link rel="stylesheet" href="http://robhar.com/css/monosocialiconsfont.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://robhar.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='http://robhar.com/about/'>About</a>
+	
+		<a href='http://robhar.com/page/pgp/'>PGP</a>
+	
+
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>Self signed certificates for development</h1>
+                    <h2 class="headline">
+                    November 23, 2015 
+                    <br>
+                    
+                    
+                        
+                            <a href="http://robhar.com/tags/code">code</a>
+                        
+                            <a href="http://robhar.com/tags/security">security</a>
+                        
+                    
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    
+
+<p>A quick reminder on how to create self-signed certificates for testing purposes.</p>
+
+<h3 id="1-generate-a-private-key:cc14cf1237ec73cd5fe9e787d996c646">1. Generate a Private Key</h3>
+
+<pre><code>openssl genrsa -des3 -out server.key 1024
+</code></pre>
+
+<h3 id="create-csr-certificate-signing-request:cc14cf1237ec73cd5fe9e787d996c646">Create CSR (Certificate Signing Request)</h3>
+
+<pre><code>openssl req -new -sha256 -key server.key -out server.csr
+</code></pre>
+
+<h3 id="3-optional-remove-passphrase:cc14cf1237ec73cd5fe9e787d996c646">3. (optional) Remove passphrase</h3>
+
+<pre><code>cp server.key server.key.org
+openssl rsa -in server.key.org -out server.key
+</code></pre>
+
+<h3 id="4-generate-self-signed-certificate:cc14cf1237ec73cd5fe9e787d996c646">4. Generate self-signed certificate</h3>
+
+<pre><code>openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+</code></pre>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                <a href="https://twitter.com/@rauwekost">
+                        <img class="avatar" src="http://robhar.com/images/avatar.png">
+                        <div>
+                            <span class="dark">Robert den Harink</span>
+                            <span></span>
+                        </div>
+                    </a>
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2frobhar.com%2fpost%2fself-signed-certificates-for-development%2f - Self%20signed%20certificates%20for%20development by @%40rauwekost"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="http://robhar.com/post/prevent-encoding-issues-with-mysqldump/">Prevent encoding issues with mysqldump<aside class="dates">Feb 4</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://robhar.com/post/install-collectd-on-centos/">Install collectd on centos<aside class="dates">Jan 17</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://robhar.com/post/self-signed-certificates-for-development/">Self signed certificates for development<aside class="dates">Nov 23</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://robhar.com/post/curlloader-on-ubuntu-14.04/">Curlloader on ubuntu 14.04<aside class="dates">Nov 10</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://robhar.com/post/do-you-like-to-party/">Do you like to party ?!<aside class="dates">Aug 5</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/rauwekost">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/rauwekost">
+        circletwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 Robert den Harink
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://robhar.com/js/main.js"></script>
+<script src="http://robhar.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>
