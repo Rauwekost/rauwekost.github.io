@@ -1,5 +1,6 @@
 # Site settings
-baseurl = "http://robhar.com/"
+baseurl = "http://rauwekost.github.io/"
+canonifyurls = true
 languageCode = "en-us"
 title = "Robert"
 theme = "robhar-2016"
