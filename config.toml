@@ -4,7 +4,7 @@ canonifyurls = true
 languageCode = "en-us"
 title = "Robhar"
 theme = "robhar-2016"
-googleAnalytics = ""
+googleAnalytics = "UA-69946026-1"
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
 
