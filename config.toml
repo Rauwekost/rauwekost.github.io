@@ -2,7 +2,7 @@
 baseurl = "http://rauwekost.github.io/"
 canonifyurls = true
 languageCode = "en-us"
-title = "Robert"
+title = "Robhar"
 theme = "robhar-2016"
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
@@ -14,7 +14,7 @@ disqusShortname = ""
     bio = "Code, music and travels"
     # Enter optionally your twitter account
     twitter = "@rauwekost"
-    enableRSS = false
+    enableRSS = true
 
     # Add custom assets with their paths relative to the static folder
     customCSS = ["css/style.css"]
