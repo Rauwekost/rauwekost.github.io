@@ -2,7 +2,7 @@
 baseurl = "http://robhar.com/"
 languageCode = "en-us"
 title = "Robert"
-theme = "hugo-cactus-theme"
+theme = "robhar-2016"
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
