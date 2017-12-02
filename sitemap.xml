@@ -3,197 +3,197 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>robhar.com/about/</loc>
+    <loc>http://robhar.com/about/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/time-for-something-new/</loc>
+    <loc>http://robhar.com/blog/time-for-something-new/</loc>
     <lastmod>2017-11-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/gorges-du-verdon/</loc>
+    <loc>http://robhar.com/blog/gorges-du-verdon/</loc>
     <lastmod>2017-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/funky-functional/</loc>
+    <loc>http://robhar.com/blog/funky-functional/</loc>
     <lastmod>2017-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/projects/various_graphical/</loc>
+    <loc>http://robhar.com/projects/various_graphical/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/preventing-encoding-issues-with-mysqldump/</loc>
+    <loc>http://robhar.com/blog/preventing-encoding-issues-with-mysqldump/</loc>
     <lastmod>2016-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/nginx-client-certificates/</loc>
+    <loc>http://robhar.com/blog/nginx-client-certificates/</loc>
     <lastmod>2016-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/self-signed-certificates/</loc>
+    <loc>http://robhar.com/blog/self-signed-certificates/</loc>
     <lastmod>2015-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/curlloader-on-ubuntu-14.4/</loc>
+    <loc>http://robhar.com/blog/curlloader-on-ubuntu-14.4/</loc>
     <lastmod>2015-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/do-you-like-to-party/</loc>
+    <loc>http://robhar.com/blog/do-you-like-to-party/</loc>
     <lastmod>2015-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/blog/krankenwagen-camper/</loc>
+    <loc>http://robhar.com/blog/krankenwagen-camper/</loc>
     <lastmod>2015-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/projects/superguide/</loc>
+    <loc>http://robhar.com/projects/superguide/</loc>
     <lastmod>2015-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/projects/3fm_glasshouse/</loc>
+    <loc>http://robhar.com/projects/3fm_glasshouse/</loc>
     <lastmod>2010-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>robhar.com/tags/ableton/</loc>
+    <loc>http://robhar.com/tags/ableton/</loc>
     <lastmod>2015-08-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/blog/</loc>
+    <loc>http://robhar.com/blog/</loc>
     <lastmod>2017-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/categories/</loc>
+    <loc>http://robhar.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/code/</loc>
+    <loc>http://robhar.com/tags/code/</loc>
     <lastmod>2015-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/databases/</loc>
+    <loc>http://robhar.com/tags/databases/</loc>
     <lastmod>2016-02-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/categories/development/</loc>
+    <loc>http://robhar.com/categories/development/</loc>
     <lastmod>2015-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/functional/</loc>
+    <loc>http://robhar.com/tags/functional/</loc>
     <lastmod>2017-06-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/haskell/</loc>
+    <loc>http://robhar.com/tags/haskell/</loc>
     <lastmod>2017-06-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/home/</loc>
+    <loc>http://robhar.com/home/</loc>
   </url>
   
   <url>
-    <loc>robhar.com/license/</loc>
+    <loc>http://robhar.com/license/</loc>
   </url>
   
   <url>
-    <loc>robhar.com/tags/mindnote/</loc>
+    <loc>http://robhar.com/tags/mindnote/</loc>
     <lastmod>2017-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/music/</loc>
+    <loc>http://robhar.com/tags/music/</loc>
     <lastmod>2015-08-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/pgp/</loc>
+    <loc>http://robhar.com/pgp/</loc>
   </url>
   
   <url>
-    <loc>robhar.com/tags/programming/</loc>
+    <loc>http://robhar.com/tags/programming/</loc>
     <lastmod>2017-06-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/categories/programming/</loc>
+    <loc>http://robhar.com/categories/programming/</loc>
     <lastmod>2015-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/projects/</loc>
+    <loc>http://robhar.com/projects/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/categories/projects/</loc>
+    <loc>http://robhar.com/categories/projects/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/</loc>
+    <loc>http://robhar.com/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/security/</loc>
+    <loc>http://robhar.com/tags/security/</loc>
     <lastmod>2016-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/startup/</loc>
+    <loc>http://robhar.com/tags/startup/</loc>
     <lastmod>2017-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/</loc>
+    <loc>http://robhar.com/tags/</loc>
     <lastmod>2015-08-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/categories/tooling/</loc>
+    <loc>http://robhar.com/categories/tooling/</loc>
     <lastmod>2015-11-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robhar.com/tags/travel/</loc>
+    <loc>http://robhar.com/tags/travel/</loc>
     <lastmod>2017-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Robhar</title>
-    <link>robhar.com/categories/</link>
+    <link>http://robhar.com/categories/</link>
     <description>Recent content in Categories on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Robert den Harink — © 2017</copyright>
     
-	<atom:link href="robhar.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://robhar.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>robhar.com/categories/development/</link>
+      <link>http://robhar.com/categories/development/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/categories/development/</guid>
+      <guid>http://robhar.com/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>robhar.com/categories/programming/</link>
+      <link>http://robhar.com/categories/programming/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/categories/programming/</guid>
+      <guid>http://robhar.com/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>robhar.com/categories/projects/</link>
+      <link>http://robhar.com/categories/projects/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/categories/projects/</guid>
+      <guid>http://robhar.com/categories/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tooling</title>
-      <link>robhar.com/categories/tooling/</link>
+      <link>http://robhar.com/categories/tooling/</link>
       <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/categories/tooling/</guid>
+      <guid>http://robhar.com/categories/tooling/</guid>
       <description></description>
     </item>
     

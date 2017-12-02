@@ -2,112 +2,112 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Robhar</title>
-    <link>robhar.com/tags/</link>
+    <link>http://robhar.com/tags/</link>
     <description>Recent content in Tags on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Robert den Harink — © 2017</copyright>
     <lastBuildDate>Wed, 05 Aug 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="robhar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://robhar.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ableton</title>
-      <link>robhar.com/tags/ableton/</link>
+      <link>http://robhar.com/tags/ableton/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/ableton/</guid>
+      <guid>http://robhar.com/tags/ableton/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>robhar.com/tags/code/</link>
+      <link>http://robhar.com/tags/code/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/code/</guid>
+      <guid>http://robhar.com/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Databases</title>
-      <link>robhar.com/tags/databases/</link>
+      <link>http://robhar.com/tags/databases/</link>
       <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/databases/</guid>
+      <guid>http://robhar.com/tags/databases/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Functional</title>
-      <link>robhar.com/tags/functional/</link>
+      <link>http://robhar.com/tags/functional/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/functional/</guid>
+      <guid>http://robhar.com/tags/functional/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Haskell</title>
-      <link>robhar.com/tags/haskell/</link>
+      <link>http://robhar.com/tags/haskell/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/haskell/</guid>
+      <guid>http://robhar.com/tags/haskell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mindnote</title>
-      <link>robhar.com/tags/mindnote/</link>
+      <link>http://robhar.com/tags/mindnote/</link>
       <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/mindnote/</guid>
+      <guid>http://robhar.com/tags/mindnote/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Music</title>
-      <link>robhar.com/tags/music/</link>
+      <link>http://robhar.com/tags/music/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/music/</guid>
+      <guid>http://robhar.com/tags/music/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>robhar.com/tags/programming/</link>
+      <link>http://robhar.com/tags/programming/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/programming/</guid>
+      <guid>http://robhar.com/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security</title>
-      <link>robhar.com/tags/security/</link>
+      <link>http://robhar.com/tags/security/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/security/</guid>
+      <guid>http://robhar.com/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Startup</title>
-      <link>robhar.com/tags/startup/</link>
+      <link>http://robhar.com/tags/startup/</link>
       <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/startup/</guid>
+      <guid>http://robhar.com/tags/startup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Travel</title>
-      <link>robhar.com/tags/travel/</link>
+      <link>http://robhar.com/tags/travel/</link>
       <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>robhar.com/tags/travel/</guid>
+      <guid>http://robhar.com/tags/travel/</guid>
       <description></description>
     </item>
     
