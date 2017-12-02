@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Databases on Robhar</title>
-    <link>rauwekost.github.io/tags/databases/</link>
+    <link>robhar.com/tags/databases/</link>
     <description>Recent content in Databases on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Robert den Harink — © 2017</copyright>
     <lastBuildDate>Thu, 04 Feb 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="rauwekost.github.io/tags/databases/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="robhar.com/tags/databases/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Preventing encoding issues with mysqldump</title>
-      <link>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</link>
+      <link>robhar.com/blog/preventing-encoding-issues-with-mysqldump/</link>
       <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</guid>
+      <guid>robhar.com/blog/preventing-encoding-issues-with-mysqldump/</guid>
       <description>Take the good old command:
 mysqldump -u user -p database &amp;gt; dump.sql  the above command is simple and effective but it doesn’t care about encodings and redirects the output to a file instead of to standard output. This can lead to all sorts of encoding issues because of the local settings on the operating system and in the database.
 To make the command care about encodings we can use the following options:</description>

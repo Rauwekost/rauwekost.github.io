@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Robhar</title>
-    <link>rauwekost.github.io/blog/</link>
+    <link>robhar.com/blog/</link>
     <description>Recent content in Blog on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Robert den Harink — © 2017</copyright>
     <lastBuildDate>Sun, 19 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="rauwekost.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="robhar.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Time for something new</title>
-      <link>rauwekost.github.io/blog/time-for-something-new/</link>
+      <link>robhar.com/blog/time-for-something-new/</link>
       <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/time-for-something-new/</guid>
+      <guid>robhar.com/blog/time-for-something-new/</guid>
       <description>I started out as a graphic designer doing mostly print/branding for a company that I started with a friend, right after we finished school. At the time, around the internet bubble, there was an increasing demand for websites, so we got into programming for the web. After four years we decided to explore more of the world. I started freelancing as a programmer and my friend started working for a other company.</description>
     </item>
     
     <item>
       <title>Gorges du Verdon</title>
-      <link>rauwekost.github.io/blog/gorges-du-verdon/</link>
+      <link>robhar.com/blog/gorges-du-verdon/</link>
       <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/gorges-du-verdon/</guid>
+      <guid>robhar.com/blog/gorges-du-verdon/</guid>
       <description>We took the &amp;lsquo;krankenwagen&amp;rsquo; to Gorges du Verdon. It took us three days to get there. The van is pretty slow and steep hills are not its speciality, so taking pit-stops is the way to travel.
 We were afraid the van could not climb the steep parts of the French Alps, but luckily we got there without trouble.
 I was a lovely quiet campsite, we had a spot near the river and a lot of sunshine.</description>
@@ -34,20 +34,20 @@ I was a lovely quiet campsite, we had a spot near the river and a lot of sunshin
     
     <item>
       <title>Funky Functional</title>
-      <link>rauwekost.github.io/blog/funky-functional/</link>
+      <link>robhar.com/blog/funky-functional/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/funky-functional/</guid>
+      <guid>robhar.com/blog/funky-functional/</guid>
       <description>It&amp;rsquo;s difficult to completely forget about your old habits and I found you shouldn&amp;rsquo;t, you should be completely open to new concepts and be willing to learn with patience and practice. But the imperative/OO concepts can be used to form better intuitions about functional concepts.
  Disclaimer: The following article is based on my own experience learning functional programming. I still have a long way to go, so please correct me if something seems out of place!</description>
     </item>
     
     <item>
       <title>Preventing encoding issues with mysqldump</title>
-      <link>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</link>
+      <link>robhar.com/blog/preventing-encoding-issues-with-mysqldump/</link>
       <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</guid>
+      <guid>robhar.com/blog/preventing-encoding-issues-with-mysqldump/</guid>
       <description>Take the good old command:
 mysqldump -u user -p database &amp;gt; dump.sql  the above command is simple and effective but it doesn’t care about encodings and redirects the output to a file instead of to standard output. This can lead to all sorts of encoding issues because of the local settings on the operating system and in the database.
 To make the command care about encodings we can use the following options:</description>
@@ -55,10 +55,10 @@ To make the command care about encodings we can use the following options:</desc
     
     <item>
       <title>Nginx client certificates</title>
-      <link>rauwekost.github.io/blog/nginx-client-certificates/</link>
+      <link>robhar.com/blog/nginx-client-certificates/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/nginx-client-certificates/</guid>
+      <guid>robhar.com/blog/nginx-client-certificates/</guid>
       <description>At work, we needed a way to verify client machines that were trying to reach our API&amp;rsquo;s.
 All the services are running behind a Nginx proxy that terminates SSL. This way we have one point of entry and one place to renew certification. So the most logical place to check for client certificates is Nginx.
 The creation and management of client certificates can be quite the hassle so I wrote a makefile and some shell scripts to automate this process.</description>
@@ -66,20 +66,20 @@ The creation and management of client certificates can be quite the hassle so I 
     
     <item>
       <title>Self signed certificates</title>
-      <link>rauwekost.github.io/blog/self-signed-certificates/</link>
+      <link>robhar.com/blog/self-signed-certificates/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/self-signed-certificates/</guid>
+      <guid>robhar.com/blog/self-signed-certificates/</guid>
       <description> A quick reminder on how to create self-signed certificates for testing purposes.
 Generate a private key. openssl genrsa -des3 -out server.key 1024  Create CSR (Certificate Signing Request). openssl req -new -sha256 -key server.key -out server.csr  Remove the passphrase (optional). cp server.key server.key.org openssl rsa -in server.key.org -out server.key  Generate self-signed certificate openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt  </description>
     </item>
     
     <item>
       <title>Curlloader on Ubuntu 14.4</title>
-      <link>rauwekost.github.io/blog/curlloader-on-ubuntu-14.4/</link>
+      <link>robhar.com/blog/curlloader-on-ubuntu-14.4/</link>
       <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/curlloader-on-ubuntu-14.4/</guid>
+      <guid>robhar.com/blog/curlloader-on-ubuntu-14.4/</guid>
       <description>Getting curl-loader source Get the tarball, install some essentials, and unarchive the tar.bz You might have to change the version number accordingly.
 wget https://sourceforge.net/projects/curl-loader/files/curl-loader-stable/ apt-get install libssl-dev build-essential bunzip2 curl-loader-0.56.tar.bz2 tar xvf curl-loader-0.56.tar  make, install Now we can build curl-loader from source.
 cd curl-loader-0.56 make make install  Tune the system Update some system settings as the quick start describes
@@ -88,19 +88,19 @@ ulimit -n 10000 echo 1 &amp;gt; /proc/sys/net/ipv4/tcp_tw_reuse  Using curl-load
     
     <item>
       <title>Do you like to party?!</title>
-      <link>rauwekost.github.io/blog/do-you-like-to-party/</link>
+      <link>robhar.com/blog/do-you-like-to-party/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/do-you-like-to-party/</guid>
+      <guid>robhar.com/blog/do-you-like-to-party/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Krankenwagen camper</title>
-      <link>rauwekost.github.io/blog/krankenwagen-camper/</link>
+      <link>robhar.com/blog/krankenwagen-camper/</link>
       <pubDate>Thu, 25 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/krankenwagen-camper/</guid>
+      <guid>robhar.com/blog/krankenwagen-camper/</guid>
       <description>We decided to buy an old german ambulance to turn it into a camper.
 We started by stripping everything and putting in a new floor
 Next up where the walls. The original plan was to use big duplex panels for a entire wall. We came to the realisation that it&amp;rsquo;s near impossible to get neat, so we went with wooden paneling. In the end also looked better!

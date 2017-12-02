@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mindnote on Robhar</title>
-    <link>rauwekost.github.io/tags/mindnote/</link>
+    <link>robhar.com/tags/mindnote/</link>
     <description>Recent content in Mindnote on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Robert den Harink — © 2017</copyright>
     <lastBuildDate>Sun, 19 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="rauwekost.github.io/tags/mindnote/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="robhar.com/tags/mindnote/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Time for something new</title>
-      <link>rauwekost.github.io/blog/time-for-something-new/</link>
+      <link>robhar.com/blog/time-for-something-new/</link>
       <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/time-for-something-new/</guid>
+      <guid>robhar.com/blog/time-for-something-new/</guid>
       <description>I started out as a graphic designer doing mostly print/branding for a company that I started with a friend, right after we finished school. At the time, around the internet bubble, there was an increasing demand for websites, so we got into programming for the web. After four years we decided to explore more of the world. I started freelancing as a programmer and my friend started working for a other company.</description>
     </item>
     

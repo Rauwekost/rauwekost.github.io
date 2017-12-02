@@ -2,112 +2,112 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Robhar</title>
-    <link>rauwekost.github.io/tags/</link>
+    <link>robhar.com/tags/</link>
     <description>Recent content in Tags on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Robert den Harink — © 2017</copyright>
     <lastBuildDate>Wed, 05 Aug 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="rauwekost.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="robhar.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ableton</title>
-      <link>rauwekost.github.io/tags/ableton/</link>
+      <link>robhar.com/tags/ableton/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/ableton/</guid>
+      <guid>robhar.com/tags/ableton/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>rauwekost.github.io/tags/code/</link>
+      <link>robhar.com/tags/code/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/code/</guid>
+      <guid>robhar.com/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Databases</title>
-      <link>rauwekost.github.io/tags/databases/</link>
+      <link>robhar.com/tags/databases/</link>
       <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/databases/</guid>
+      <guid>robhar.com/tags/databases/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Functional</title>
-      <link>rauwekost.github.io/tags/functional/</link>
+      <link>robhar.com/tags/functional/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/functional/</guid>
+      <guid>robhar.com/tags/functional/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Haskell</title>
-      <link>rauwekost.github.io/tags/haskell/</link>
+      <link>robhar.com/tags/haskell/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/haskell/</guid>
+      <guid>robhar.com/tags/haskell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mindnote</title>
-      <link>rauwekost.github.io/tags/mindnote/</link>
+      <link>robhar.com/tags/mindnote/</link>
       <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/mindnote/</guid>
+      <guid>robhar.com/tags/mindnote/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Music</title>
-      <link>rauwekost.github.io/tags/music/</link>
+      <link>robhar.com/tags/music/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/music/</guid>
+      <guid>robhar.com/tags/music/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>rauwekost.github.io/tags/programming/</link>
+      <link>robhar.com/tags/programming/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/programming/</guid>
+      <guid>robhar.com/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security</title>
-      <link>rauwekost.github.io/tags/security/</link>
+      <link>robhar.com/tags/security/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/security/</guid>
+      <guid>robhar.com/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Startup</title>
-      <link>rauwekost.github.io/tags/startup/</link>
+      <link>robhar.com/tags/startup/</link>
       <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/startup/</guid>
+      <guid>robhar.com/tags/startup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Travel</title>
-      <link>rauwekost.github.io/tags/travel/</link>
+      <link>robhar.com/tags/travel/</link>
       <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/tags/travel/</guid>
+      <guid>robhar.com/tags/travel/</guid>
       <description></description>
     </item>
     

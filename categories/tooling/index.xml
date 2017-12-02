@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tooling on Robhar</title>
-    <link>rauwekost.github.io/categories/tooling/</link>
+    <link>robhar.com/categories/tooling/</link>
     <description>Recent content in Tooling on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Robert den Harink — © 2017</copyright>
     <lastBuildDate>Wed, 11 Nov 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="rauwekost.github.io/categories/tooling/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="robhar.com/categories/tooling/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Curlloader on Ubuntu 14.4</title>
-      <link>rauwekost.github.io/blog/curlloader-on-ubuntu-14.4/</link>
+      <link>robhar.com/blog/curlloader-on-ubuntu-14.4/</link>
       <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/curlloader-on-ubuntu-14.4/</guid>
+      <guid>robhar.com/blog/curlloader-on-ubuntu-14.4/</guid>
       <description>Getting curl-loader source Get the tarball, install some essentials, and unarchive the tar.bz You might have to change the version number accordingly.
 wget https://sourceforge.net/projects/curl-loader/files/curl-loader-stable/ apt-get install libssl-dev build-essential bunzip2 curl-loader-0.56.tar.bz2 tar xvf curl-loader-0.56.tar  make, install Now we can build curl-loader from source.
 cd curl-loader-0.56 make make install  Tune the system Update some system settings as the quick start describes

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Robhar</title>
-    <link>rauwekost.github.io/tags/programming/</link>
+    <link>robhar.com/tags/programming/</link>
     <description>Recent content in Programming on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Robert den Harink — © 2017</copyright>
     <lastBuildDate>Mon, 12 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="rauwekost.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="robhar.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Funky Functional</title>
-      <link>rauwekost.github.io/blog/funky-functional/</link>
+      <link>robhar.com/blog/funky-functional/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/funky-functional/</guid>
+      <guid>robhar.com/blog/funky-functional/</guid>
       <description>It&amp;rsquo;s difficult to completely forget about your old habits and I found you shouldn&amp;rsquo;t, you should be completely open to new concepts and be willing to learn with patience and practice. But the imperative/OO concepts can be used to form better intuitions about functional concepts.
  Disclaimer: The following article is based on my own experience learning functional programming. I still have a long way to go, so please correct me if something seems out of place!</description>
     </item>
     
     <item>
       <title>Preventing encoding issues with mysqldump</title>
-      <link>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</link>
+      <link>robhar.com/blog/preventing-encoding-issues-with-mysqldump/</link>
       <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</guid>
+      <guid>robhar.com/blog/preventing-encoding-issues-with-mysqldump/</guid>
       <description>Take the good old command:
 mysqldump -u user -p database &amp;gt; dump.sql  the above command is simple and effective but it doesn’t care about encodings and redirects the output to a file instead of to standard output. This can lead to all sorts of encoding issues because of the local settings on the operating system and in the database.
 To make the command care about encodings we can use the following options:</description>
@@ -35,10 +35,10 @@ To make the command care about encodings we can use the following options:</desc
     
     <item>
       <title>Nginx client certificates</title>
-      <link>rauwekost.github.io/blog/nginx-client-certificates/</link>
+      <link>robhar.com/blog/nginx-client-certificates/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>rauwekost.github.io/blog/nginx-client-certificates/</guid>
+      <guid>robhar.com/blog/nginx-client-certificates/</guid>
       <description>At work, we needed a way to verify client machines that were trying to reach our API&amp;rsquo;s.
 All the services are running behind a Nginx proxy that terminates SSL. This way we have one point of entry and one place to renew certification. So the most logical place to check for client certificates is Nginx.
 The creation and management of client certificates can be quite the hassle so I wrote a makefile and some shell scripts to automate this process.</description>
