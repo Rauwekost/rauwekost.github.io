@@ -1,0 +1,123 @@
+{{ partial "header.html" . }}
+<article>
+  <header class="bg-gold sans-serif">
+    <div class="mw9 center pa4 pt5-ns ph7-l">
+      <time class="f6 mb2 dib ttu tracked"><small>{{ .Date.Format .Site.Params.dateform }}</small></time>
+      <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+        <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+          {{ .Title }}
+        </span>
+      </h3>
+      <h4 class="f3 fw1 georgia i">{{ .Params.subtitle }}</h4>
+      <h5 class="f6 ttu tracked black-80">{{ .Params.author }}</h5>
+    </div>
+  </header>
+  <div id="meta" class="mw9 center pa4 pt5-ns ph7-l tr">
+    <div class="f6 ttu tracked ">{{ .ReadingTime }} minute read</div>
+    <div class="tags">
+        {{ range .Params.tags }}
+          <a class="f6 ttu tracked" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </div>
+  </div>
+  <div class="pa4 ph7-l georgia mw9-l center">
+      <p class="f5 f3-ns lh-copy measure georgia">
+        {{ .Params.excerpt }}
+      </p>
+      <p class="f5 f3-ns lh-copy measure georgia">
+        In 1958 he published a piece in Venture proclaiming what he called "Sturgeon's Revelation"
+      </p>
+    <p class="f6 f5-ns lh-copy measure i pl4 bl bw1 b--gold mb4">
+      I repeat Sturgeon's Revelation, which was wrung out of me after twenty years of wearying defense of science fiction against attacks of people who used the worst examples of the field for ammunition, and whose conclusion was that ninety percent of SF is crud. Using the same standards that categorize 90% of science fiction as trash, crud, or crap, it can be argued that 90% of film, literature, consumer goods, etc. is crap. In other words, the claim (or fact) that 90% of science fiction is crap is ultimately uninformative, because science fiction conforms to the same trends of quality as all other artforms.
+    </p>
+    <p class="f5 f4-ns lh-copy measure mb4">
+    You don't have to bounce a tennis ball very far in San Francisco before it will hit two developers complaining about how many js tools/frameworks there are for development in 2015 and how much unneccessary complexity they add. Doing a search on twitter for 'too many js tools' or 'yet another js framework' returns... a lot of people lamenting the current state of affairs.
+  </p>
+
+    <p class="f5 f4-ns lh-copy measure">
+    This is most likely, the wrong conversation for us as a community, to be having. The presence of bad tools - shouldn't discourage us from wanting more tools or frameworks. There are more books published in a single day than I will ever be able to read in my lifetime. But this does not make me sad. Or overwhelm me. Mostly I think about how excited I am to read the best books that are being published. And this is where we should push the conversation. How do we build better tools? What does that look like?
+  </p>
+  </div>
+</article>
+<div class="disqus">
+    {{ template "_internal/disqus.html" . }}
+</div>
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    {{ partial "page-heading" . }}
+                </div>
+                <div class="meta">
+                    <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
+                    {{ if not .Params.noauthor }}
+                        {{ if .Params.author }}
+                        <div class="author middot" title="{{ .Params.Author }}">{{ .Params.author }}</div>
+                        {{end}}
+                    {{end}}
+                    <div class="reading-time middot">{{ .ReadingTime }} minute read</div>
+                    <div class="tags">
+                        <ul>
+                          {{ range .Params.tags }}
+                            <li class="middot"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+                          {{ end }}
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          {{ if isset .Params "hacker_news_id" }}
+                            <li class="middot"><a href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a> </li>
+                          {{ end }}
+                          {{ if isset .Params "lobsters_id" }}
+                            <li class="middot"><a href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a> </li>
+                          {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="markdown">
+                {{ partial "content" . }}
+                <br>
+            </div>
+            {{ if .Site.Params.share }}
+            <div class="share">
+                <a href="" class="ssk ssk-facebook"></a>
+                <a href="" class="ssk ssk-twitter"></a>
+                <a href="" class="ssk ssk-google-plus"></a>
+                <a href="" class="ssk ssk-linkedin"></a>
+            </div>
+            {{ end }}
+            {{ if .Site.Params.posts_navigation }}
+                <div class="navigation">
+                    {{ if .PrevInSection }}
+                    <div>
+                        <img class="icon" src="/img/back.svg" alt="back" />
+                        <a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a>
+                    </div>
+                    {{ end }}
+                    <div style="width: 100%;"></div>
+                    {{ if .NextInSection }}
+                    <div>
+                        <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a>
+                        <img class="icon" src="/img/next.svg" alt="next" />
+                    </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+            <br>
+            <div class="disqus">
+                {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ if .Site.Params.issoHost }}
+            <div class="isso" id="isso-thread"></div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

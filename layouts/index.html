@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+<section id="main" class="mw9 center ph7-l ph4-m ph4 center helvetica">
+    {{ range where .Data.Pages "Title" "Home" }}
+        <div class="markdown f1-l f2-m f2-ns f3 b measure-narrow lh-title near-black anima highlighted-links">{{ .Content }}</div>
+    {{ end }}
+
+    {{ if isset .Site.Params "latestpostcount" }}
+        <div class="posts lh-copy near-black anima">
+        {{ $nbPosts := len (where .Data.Pages "Section" "blog") }}
+        {{ if gt $nbPosts 0 }}
+            <h2 class="f3">Latest posts</h2>
+            <ul class="list ma0 pa0 f4">
+            {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "blog")).GroupByDate "Jan, 2006" "desc" }}
+                <li class="b mb2 mt3">{{ .Key }}</li>
+                {{ range .Pages.ByPublishDate }}
+                  {{ partial "li.html" . }}
+                {{ end }}
+            {{ end }}
+            </ul>
+
+            {{ if gt $nbPosts .Site.Params.latestpostcount }}
+                <a href="./blog/" class="see-more">See more ...</a>
+            {{ end }}
+        {{ end }}
+        </div>
+    {{ end }}
+</section>
+
+{{ partial "footer.html" . }}

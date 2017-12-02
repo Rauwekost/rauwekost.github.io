@@ -1,0 +1,49 @@
+<footer class="pv4 mt4 bt b--black-20 black-70">
+  <div class="mw9 center pa4 pt4-ns ph7-l lh-copy anima">
+    {{ if .Site.Params.email }}
+        <a class="link b f3 f2-ns lh-solid" href="mailto:{{ .Site.Params.email }}">
+            {{ .Site.Params.email }}
+        </a>
+    {{ end }}
+
+    <div class="mt5">
+      {{ if .Site.Params.facebook }}
+          <a class="dib mr3" href="https://facebook.com/{{ .Site.Params.facebook }}" target="_blank">
+              <img width="24px" class="icon" src="{{ .Site.BaseURL }}img/facebook.svg" alt="facebook" />
+          </a>
+      {{ end }}
+
+      {{ if .Site.Params.github }}
+          <a class="dib mr3" href="https://github.com/{{ .Site.Params.github }}" target="_blank">
+              <img width="24px" class="icon" src="{{ .Site.BaseURL }}img/github.svg" alt="github" />
+          </a>
+      {{ end }}
+
+      {{ if .Site.Params.twitter }}
+          <a class="dib mr3" href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
+              <img width="24px" class="icon" src="{{ .Site.BaseURL }}img/twitter.svg" alt="twitter" />
+          </a>
+      {{ end }}
+
+      {{ if .Site.Params.linkedin }}
+          <a class="dib mr3" href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
+              <img width="24px" class="icon" src="{{ .Site.BaseURL }}img/linkedin.svg" alt="linkedin" />
+          </a>
+      {{ end }}
+
+      {{ if .Site.RSSLink }}
+          <a class="dib mr3" href="{{ .Site.RSSLink }}">
+              <img width="24px" class="icon" src="{{ .Site.BaseURL }}img/rss.svg" alt="rss" />
+          </a>
+      {{ end }}
+      {{ if .Site.Params.copyright }}
+          <a class="f6 lh-solid" href="{{ .Site.BaseURL }}license">{{ .Site.Params.copyright }}</a>
+      {{ end }}
+    </div>
+  </div>
+</footer>
+
+{{ partial "footer_scripts" . }}
+
+</body>
+</html>

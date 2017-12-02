@@ -1,0 +1,82 @@
+<article>
+  <header class="bg-{{ .Params.colour}} sans-serif" style="background-image: url({{ .Params.meta_img }}); background-repeat:no-repeat; background-size:cover">
+    <div class="mw9 center pa4 pt5-ns ph7-l">
+      <time class="f6 mb2 dib ttu tracked"><small>{{ .Date.Format .Site.Params.dateform }}</small></time>
+      <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+        <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+          {{ .Title }}
+        </span>
+      </h3>
+      <h4 class="f3 fw1 lora i">{{ .Params.subtitle }}</h4>
+      <h5 class="f6 ttu tracked black-80">{{ .Params.author }}</h5>
+    </div>
+  </header>
+
+  <div id="meta" class="mw9 center pa4 pt5-ns ph7-l tr anima">
+    <div class="f6 ttu tracked ">{{ .ReadingTime }} minute read</div>
+
+    <div class="tags">
+        {{ range .Params.tags }}
+          <a class="f6 ttu tracked" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </div>
+
+    <div id="links">
+      {{ if isset .Params "hacker_news_id" }}
+      <a class="f6 ttu tracked" href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a>
+      {{ end }}
+      {{ if isset .Params "lobsters_id" }}
+        <a class="f6 ttu tracked"href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="pa4 ph7-l lora mw9-l center ">
+
+    <p class="f5 f3-ns lh-copy measure lora">{{ .Params.excerpt }}</p>
+
+    <div class="f5 f4-ns lh-copy measure mb4 markdown anima highlighted-links">{{ partial "content" . }}</div>
+
+    <div class="w100 bt b--{{ .Params.colour }} mb5"></div>
+
+    {{ if .Site.Params.posts_navigation }}
+        <div class="sans-serif anima">
+            {{ if .PrevInSection }}
+            <div class="f6 ttu tracked fl"><span class="b">prev:</span>
+                <a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a>
+            </div>
+            {{ end }}
+
+            {{ if .NextInSection }}
+            <div class="f6 ttu tracked fr"><span class="b">next:</span>
+                <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a>
+            </div>
+            {{ end }}
+        </div>
+    {{ end }}
+
+    <div class="cf"></div>
+
+
+    <div class="w100 bt b--{{ .Params.colour }} mt5"></div>
+
+    {{ if .Site.Params.share }}
+    <div id="share" class="pt3 pb3 tc">
+        <a href="" class="ssk ssk-facebook"></a>
+        <a href="" class="ssk ssk-twitter"></a>
+        <a href="" class="ssk ssk-google-plus"></a>
+        <a href="" class="ssk ssk-linkedin"></a>
+    </div>
+    {{ end }}
+
+
+
+    <div class="disqus">
+      {{ template "_internal/disqus.html" . }}
+    </div>
+
+    {{ if .Site.Params.issoHost }}
+      <div class="isso" id="isso-thread"></div>
+    {{ end }}
+  </div>
+</article>

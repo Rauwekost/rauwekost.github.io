@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<article>
+  <div id="meta" class="mw9 center pa4 pt5-ns ph7-l">
+    <h1 class="f1">{{ .Title }}</h1>
+    <div class="markdown lh-copy lora">
+        {{ partial "content" . }}
+    </div>
+  </div>
+</article>
+{{ partial "footer.html" . }}

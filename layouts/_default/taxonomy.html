@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<article>
+  <div class="mw9 center pa4 pt5-ns ph7-l f3 lh-copy anima">
+    <h1 class="f1">Posts about "{{ .Title }}"</h1>
+    <ul class="list ma0 pa0">
+        {{ range .Data.Pages.GroupByDate "Jan, 2006" "desc"}}
+            <li class="b mb2 mt3">{{ .Key }}</li>
+            {{ range .Pages.ByPublishDate }}
+                {{ partial "li.html" . }}
+            {{ end }}
+        {{ end }}
+    </ul>
+  </div>
+</article>
+{{ partial "footer.html" . }}
