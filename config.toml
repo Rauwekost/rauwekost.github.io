@@ -1,4 +1,4 @@
-baseurl = "robhar.com"
+baseurl = "http://robhar.com/"
 theme = "cocoa-eh"
 builddrafts = false
 canonifyurls = true
