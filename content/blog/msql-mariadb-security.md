@@ -1,4 +1,5 @@
 ---
+draft: true
 author: "Robert den Harink"
 date: 2017-12-01
 title: MySQL / MariaDB Security best practices.
