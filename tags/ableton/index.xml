@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ableton on Robhar</title>
+    <link>rauwekost.github.io/tags/ableton/</link>
+    <description>Recent content in Ableton on Robhar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Robert den Harink — © 2017</copyright>
+    <lastBuildDate>Wed, 05 Aug 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="rauwekost.github.io/tags/ableton/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Do you like to party?!</title>
+      <link>rauwekost.github.io/blog/do-you-like-to-party/</link>
+      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/do-you-like-to-party/</guid>
+      <description> </description>
+    </item>
+    
+  </channel>
+</rss>

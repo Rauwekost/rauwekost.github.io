@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Robhar</title>
+    <link>rauwekost.github.io/categories/projects/</link>
+    <description>Recent content in Projects on Robhar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Robert den Harink — © 2017</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="rauwekost.github.io/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Various</title>
+      <link>rauwekost.github.io/projects/various_graphical/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/projects/various_graphical/</guid>
+      <description>Various posters: Branding: Books: </description>
+    </item>
+    
+    <item>
+      <title>Superguide</title>
+      <link>rauwekost.github.io/projects/superguide/</link>
+      <pubDate>Fri, 03 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/projects/superguide/</guid>
+      <description>The idea of Superguide was to help the user choose in the ever-growing world of television, on-demand and internet. At the time Veronica Magazine already had a high rated tv-guide app with a userbase of 800.00+ users a day, but this app only covered the television aspect of the project.
+I was part of a multi-disciplined team with designers, frontend and backend developers that had to rewrite the app. Add on-demand channels like Netflix and Videoland, more movie information, background stories on celebrities, series etc.</description>
+    </item>
+    
+    <item>
+      <title>3FM fundraiser visuals</title>
+      <link>rauwekost.github.io/projects/3fm_glasshouse/</link>
+      <pubDate>Fri, 03 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/projects/3fm_glasshouse/</guid>
+      <description>The NEOS foundation organised a fundraiser for the glass house. It was a dinner show for hundreds of people. Andre Amaro cooked together with the commentary of Frank Lammers. There where multiple performances, speakers and theatre acts.
+Me and my companion at the time were asked to create visuals to accompany the theatre and provide live video feedback on big screens so everybody in the hall could see what was happening.</description>
+    </item>
+    
+  </channel>
+</rss>

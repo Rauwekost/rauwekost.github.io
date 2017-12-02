@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>rauwekost.github.io/about/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/time-for-something-new/</loc>
+    <lastmod>2017-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/gorges-du-verdon/</loc>
+    <lastmod>2017-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/funky-functional/</loc>
+    <lastmod>2017-06-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/projects/various_graphical/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</loc>
+    <lastmod>2016-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/nginx-client-certificates/</loc>
+    <lastmod>2016-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/self-signed-certificates/</loc>
+    <lastmod>2015-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/curlloader-on-ubuntu-14.4/</loc>
+    <lastmod>2015-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/do-you-like-to-party/</loc>
+    <lastmod>2015-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/krankenwagen-camper/</loc>
+    <lastmod>2015-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/projects/superguide/</loc>
+    <lastmod>2015-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/projects/3fm_glasshouse/</loc>
+    <lastmod>2010-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/ableton/</loc>
+    <lastmod>2015-08-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/blog/</loc>
+    <lastmod>2017-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/code/</loc>
+    <lastmod>2015-11-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/databases/</loc>
+    <lastmod>2016-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/categories/development/</loc>
+    <lastmod>2015-11-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/functional/</loc>
+    <lastmod>2017-06-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/haskell/</loc>
+    <lastmod>2017-06-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/home/</loc>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/license/</loc>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/mindnote/</loc>
+    <lastmod>2017-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/music/</loc>
+    <lastmod>2015-08-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/pgp/</loc>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/categories/programming/</loc>
+    <lastmod>2015-11-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/programming/</loc>
+    <lastmod>2017-06-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/projects/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/categories/projects/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/security/</loc>
+    <lastmod>2016-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/startup/</loc>
+    <lastmod>2017-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/</loc>
+    <lastmod>2015-08-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/categories/tooling/</loc>
+    <lastmod>2015-11-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>rauwekost.github.io/tags/travel/</loc>
+    <lastmod>2017-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

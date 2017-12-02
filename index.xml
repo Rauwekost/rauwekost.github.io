@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robhar</title>
+    <link>rauwekost.github.io/</link>
+    <description>Recent content on Robhar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Robert den Harink — © 2017</copyright>
+    <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="rauwekost.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>rauwekost.github.io/about/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/about/</guid>
+      <description>Hello, my name is Robert den Harink. I’m a software engineer from the Netherlands. I like functional programming, mathematics and design. Occasionally I create funky music with Ableton/vintage-organs and travel in my old &amp;lsquo;krankenwagen&amp;rsquo; — that&amp;rsquo;s German for an ambulance.
+I keep this blog for things I like and love, problems I encounter or simply as a mental note. I noticed that writing things down and thinking about things from a writers perspective gives me more focus and insight on the topics I like.</description>
+    </item>
+    
+    <item>
+      <title>Time for something new</title>
+      <link>rauwekost.github.io/blog/time-for-something-new/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/time-for-something-new/</guid>
+      <description>I started out as a graphic designer doing mostly print/branding for a company that I started with a friend, right after we finished school. At the time, around the internet bubble, there was an increasing demand for websites, so we got into programming for the web. After four years we decided to explore more of the world. I started freelancing as a programmer and my friend started working for a other company.</description>
+    </item>
+    
+    <item>
+      <title>Gorges du Verdon</title>
+      <link>rauwekost.github.io/blog/gorges-du-verdon/</link>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/gorges-du-verdon/</guid>
+      <description>We took the &amp;lsquo;krankenwagen&amp;rsquo; to Gorges du Verdon. It took us three days to get there. The van is pretty slow and steep hills are not its speciality, so taking pit-stops is the way to travel.
+We were afraid the van could not climb the steep parts of the French Alps, but luckily we got there without trouble.
+I was a lovely quiet campsite, we had a spot near the river and a lot of sunshine.</description>
+    </item>
+    
+    <item>
+      <title>Funky Functional</title>
+      <link>rauwekost.github.io/blog/funky-functional/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/funky-functional/</guid>
+      <description>It&amp;rsquo;s difficult to completely forget about your old habits and I found you shouldn&amp;rsquo;t, you should be completely open to new concepts and be willing to learn with patience and practice. But the imperative/OO concepts can be used to form better intuitions about functional concepts.
+ Disclaimer: The following article is based on my own experience learning functional programming. I still have a long way to go, so please correct me if something seems out of place!</description>
+    </item>
+    
+    <item>
+      <title>Various</title>
+      <link>rauwekost.github.io/projects/various_graphical/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/projects/various_graphical/</guid>
+      <description>Various posters: Branding: Books: </description>
+    </item>
+    
+    <item>
+      <title>Preventing encoding issues with mysqldump</title>
+      <link>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</link>
+      <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/preventing-encoding-issues-with-mysqldump/</guid>
+      <description>Take the good old command:
+mysqldump -u user -p database &amp;gt; dump.sql  the above command is simple and effective but it doesn’t care about encodings and redirects the output to a file instead of to standard output. This can lead to all sorts of encoding issues because of the local settings on the operating system and in the database.
+To make the command care about encodings we can use the following options:</description>
+    </item>
+    
+    <item>
+      <title>Nginx client certificates</title>
+      <link>rauwekost.github.io/blog/nginx-client-certificates/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/nginx-client-certificates/</guid>
+      <description>At work, we needed a way to verify client machines that were trying to reach our API&amp;rsquo;s.
+All the services are running behind a Nginx proxy that terminates SSL. This way we have one point of entry and one place to renew certification. So the most logical place to check for client certificates is Nginx.
+The creation and management of client certificates can be quite the hassle so I wrote a makefile and some shell scripts to automate this process.</description>
+    </item>
+    
+    <item>
+      <title>Self signed certificates</title>
+      <link>rauwekost.github.io/blog/self-signed-certificates/</link>
+      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/self-signed-certificates/</guid>
+      <description> A quick reminder on how to create self-signed certificates for testing purposes.
+Generate a private key. openssl genrsa -des3 -out server.key 1024  Create CSR (Certificate Signing Request). openssl req -new -sha256 -key server.key -out server.csr  Remove the passphrase (optional). cp server.key server.key.org openssl rsa -in server.key.org -out server.key  Generate self-signed certificate openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt  </description>
+    </item>
+    
+    <item>
+      <title>Curlloader on Ubuntu 14.4</title>
+      <link>rauwekost.github.io/blog/curlloader-on-ubuntu-14.4/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/curlloader-on-ubuntu-14.4/</guid>
+      <description>Getting curl-loader source Get the tarball, install some essentials, and unarchive the tar.bz You might have to change the version number accordingly.
+wget https://sourceforge.net/projects/curl-loader/files/curl-loader-stable/ apt-get install libssl-dev build-essential bunzip2 curl-loader-0.56.tar.bz2 tar xvf curl-loader-0.56.tar  make, install Now we can build curl-loader from source.
+cd curl-loader-0.56 make make install  Tune the system Update some system settings as the quick start describes
+ulimit -n 10000 echo 1 &amp;gt; /proc/sys/net/ipv4/tcp_tw_reuse  Using curl-loader Example Configuration</description>
+    </item>
+    
+    <item>
+      <title>Do you like to party?!</title>
+      <link>rauwekost.github.io/blog/do-you-like-to-party/</link>
+      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/do-you-like-to-party/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Krankenwagen camper</title>
+      <link>rauwekost.github.io/blog/krankenwagen-camper/</link>
+      <pubDate>Thu, 25 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/blog/krankenwagen-camper/</guid>
+      <description>We decided to buy an old german ambulance to turn it into a camper.
+We started by stripping everything and putting in a new floor
+Next up where the walls. The original plan was to use big duplex panels for a entire wall. We came to the realisation that it&amp;rsquo;s near impossible to get neat, so we went with wooden paneling. In the end also looked better!
+We installed a gas installation, the van is a heavy drinker, 1l/8KM average.</description>
+    </item>
+    
+    <item>
+      <title>Superguide</title>
+      <link>rauwekost.github.io/projects/superguide/</link>
+      <pubDate>Fri, 03 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/projects/superguide/</guid>
+      <description>The idea of Superguide was to help the user choose in the ever-growing world of television, on-demand and internet. At the time Veronica Magazine already had a high rated tv-guide app with a userbase of 800.00+ users a day, but this app only covered the television aspect of the project.
+I was part of a multi-disciplined team with designers, frontend and backend developers that had to rewrite the app. Add on-demand channels like Netflix and Videoland, more movie information, background stories on celebrities, series etc.</description>
+    </item>
+    
+    <item>
+      <title>3FM fundraiser visuals</title>
+      <link>rauwekost.github.io/projects/3fm_glasshouse/</link>
+      <pubDate>Fri, 03 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/projects/3fm_glasshouse/</guid>
+      <description>The NEOS foundation organised a fundraiser for the glass house. It was a dinner show for hundreds of people. Andre Amaro cooked together with the commentary of Frank Lammers. There where multiple performances, speakers and theatre acts.
+Me and my companion at the time were asked to create visuals to accompany the theatre and provide live video feedback on big screens so everybody in the hall could see what was happening.</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>rauwekost.github.io/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/home/</guid>
+      <description>Hi, I&amp;rsquo;m Robert a software engineer from the Netherlands. Here you can find my thoughts on programming, design, music and some of my travels.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>rauwekost.github.io/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/license/</guid>
+      <description>The MIT License (MIT)
+Copyright &amp;copy; 2017 Robert den Harink robert@robhar.com
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
+    </item>
+    
+    <item>
+      <title>PGP Key</title>
+      <link>rauwekost.github.io/pgp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>rauwekost.github.io/pgp/</guid>
+      <description> -----BEGIN PGP PUBLIC KEY BLOCK----- mQINBFmFpowBEAC+rL3+lZT+u/k69MtFnsy+XrGr3v02BTlfE7ss+SV2V3HtfKqL U/vegVQONHjWhSPYh4YqJfYGtDBzkvyhl4Mnzv6icVwy/sDPF3ELV7xYUOxIswb5 BlUtPhliNGgrVN2nvf+wtpt/B533ljMLGueuqcN3f7LHYjfbKF/rWdjE38pKYPSj 9lq4qaGLOWym2HBgg0S9GM8+VuquY3m+UBI9q3nVT6UhGK0nr2/6B+YoDuTrNLIo twucOFkULeUH4T6P5wgEWyZfQ4i6WFm0vyV9MzV+tter8Lz7iWD8CX0OoRnKOqs2 HFgRZEHEgh2ozQXDSZlmlCOb8Oz75mapTsC8AUqzTZBSvQtoAF0wwx2QGNzdYacA bt8wS3ZHwC1c+5Anc6Ann08OFJVhaGNvYSW6gbouWDNwS7MX1IzQPuYxmfpfaMeA 5KAZocjVbW9MShi7HxUBLFAnfBcaM6Ebh+mAPZrv7a4LCv3nk2miboj0iXPSIAVn tdoOyRu0ErxLp4LNqIyQBNuYOeQaN4N7F5yO8EQslXy4hl4e+R272RjGLPisQGTt iGNSepdh9tLNJTwEMvw49N6VhoFseioCp88hD5J9nCGZpN+RugAHo76XqHtCUPRN MQW6gqUwV+i4lyEUXlZBNbM9gybkjTBiRCwp8TQ3helJL12YjCDzJO8iPwARAQAB tCVSb2JlcnQgZGVuIEhhcmluayA8cm9iZXJ0QHJvYmhhci5jb20+iQI9BBMBCgAn BQJZhaaMAhsDBQkHhh+ABQsJCAcDBRUKCQgLBRYCAwEAAh4BAheAAAoJEAXdRvux 9EKWOm8QALDaTurPJvMKL89QWVJEmV5ckc/aGzSWROb4d9ZsrwdL71VWXApz/Dey eqAmjGXkx2EHSO3GYSPcNO/TtWqC2Jyt/u0Iu99sJbu3avU/zNM50LHA95cpoXwL 2l2ubqciRoOokNTCmGAPvoQqR0itC0ZNv9TJmmuVQ62WKlHTNwRbB4kG41yFFq1F jDyPKbj/B6yiw46fxMGrUQXJtUjbtqQP8K/oug0BDiNLiv8z8j1TwwY9akOpgoUp rDSw5v0SLLECvVA9ell1542hn6RMUMyBFYSz7SWROTE/nN53Q5AQQooRBwe30Ggc 9XiiJpljmdiU271g+RzGfHTq5NBQuatY7pjlQgQ2z08LbKF1v3ZdhglNFZsjVdM9 /QyvR2ZCapfnAQBbJ03KVSSSDV6+nfO5bydkjgc29eHjR+c3ym7GzmB4EySChyPA VojG6YzfHO44l9X/PBHUOpwFsZaG5JcniTCZ6glkK43xDX0tinECTF4RoFYs1mTW MzSayGfbQ3zp4EfrDVyQJZRhdzNgdt3FQXJ6NGBBDdjI089Ro+F3AkkoYGYK0SYE O52A3P3siKmJUsWyT88d1jdnyIMigO24W0frsjJCbxck+HGDLhroqcqo1RsfBkSr R9CQcF0bVR1bXwo1wrGK4sbnZdDAcZ1gyemGdaztr/uVo+34bpMRuQINBFmFpowB EADCj0p2gp10pbYtkDO8RT5TKXXEvQoCFc3k+ADR4LMoqQEQHlfTTtxEIzK9UIDj eI0VdPcd8WrawechrmPTqcRCFy4mbwoGI6Bnet8ptAyY2mDdRStN2qOCLixmkrvP NtGis0g+2mnVgS+8+KENY+wgahJMAHVx7dFTvA+jjfgXyB1MndmSxeKnF2W5BBbG dekDnO7yvE82TWk055uM+0Xyv7Zkyi/unhX0M2gZS3xRTHIwmivpqnk7atTF+BEp aLSQ4I7KZ+s6gKQfbF3LGiWAZcY/8e629f7CdmSHuAcRBQkLqhCA/orBEz1QXnIT W1UC5TDmCMpjPe3OgTpY0jeNqmDRJmCznS5C+ZwIBnHiYH5GLgqcMJtAYy0s33pa bWKyrGN1HUtDo5CWa5X0vTjR2ATaHamtEOK4bGTx4OnkdjCVWVQp9Axxp0nCziSw D88r9Ulz0orU65I5fD7k/aKtocAMzCqqp4B90jt9DodeMX1KgwU7VLcy+eSEm1CL LJdxQ9kYFOWuARFh1yHQ+AMpw/cro+hae6iZGDEFOZWhRv+t6LGFBYPMjDphUxcR Yf/x/T1bd0w2pQYuRJ9cWyrzPGTCz1cxFaD+pBAXh4om97R4efpiZAvr0/GYsi+e 87rtcuoV9joGbxKl97Epi+xNOWsYlcCFx+hbUylKpsfq7QARAQABiQIlBBgBCgAP BQJZhaaMAhsMBQkHhh+AAAoJEAXdRvux9EKW6hUP/iYaTndl8YxzfA1+EK2tXpZU M0V9dRZ2x3Wgy9wfZYUecwBznrPIblwkz+X1m5b+N8KtTkq2dMeY874mCMqtF65k EFYp/9uF9rdjghhPy+Ksq4zp8kMUr4+WAIcAgefZpyYmaMDBCmp435rysThPhf0b QzY1+SLwBzkYNF66Ga0ZKl7cfn0r8IEEOMSZH+CL/h3UOqS5xyQJm+VrecHRXBIh xOGdKkUMLwl3yidgLCvjrRs/B4d9ZnLVwbTV5NFVocNZwoIbEFJPbCrP+aEauhkr grqC9d4IyX6Ec1FVvcD1DX0k7d+HnZLAo2ewnh0a4vkChnPW5auN/s8CCN9dffic wsAbAPsSjm7MuH/DARUy1RPvbS6ez6aep7arpubdPTTPHoh9FpBaPGJWFvsTfO2G QDswR/bIMn/Hjzd0rdafNFwAiLOQ6hTSt9oHgU8/5MBvR1las6CUV9uXBFjJRPvu JrGeViD8BeItQnmm2cgW9sPtQ92CNiHjG3zjLbjuPXbWLBHLc204Z+yY5lT90CBu OHAtqc9vqao+oJOAb1isCI5/m91RmNJihGxOsugpfMPwiMSvy7WZdLJ89tZugxNC zrP3X2znIKRIXI45TEmfNtHuxG2BcjsAp3cgJX43aJ04eu5Fss8I0uJ0FysOYELe KdcboTvL59+DVIdvuIsY =uu6s -----END PGP PUBLIC KEY BLOCK-----  </description>
+    </item>
+    
+  </channel>
+</rss>
