@@ -6,7 +6,6 @@
     <description>Recent content on Robhar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>Robert den Harink — © 2017</copyright>
     <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://robhar.com/index.xml" rel="self" type="application/rss+xml" />
@@ -20,6 +19,15 @@
       <guid>http://robhar.com/about/</guid>
       <description>Hello, my name is Robert den Harink. I’m a software engineer from the Netherlands. I like functional programming, mathematics and design. Occasionally I create funky music with Ableton/vintage-organs and travel in my old &amp;lsquo;krankenwagen&amp;rsquo; — that&amp;rsquo;s German for an ambulance.
 I keep this blog for things I like and love, problems I encounter or simply as a mental note. I noticed that writing things down and thinking about things from a writers perspective gives me more focus and insight on the topics I like.</description>
+    </item>
+    
+    <item>
+      <title>Time for something new</title>
+      <link>http://robhar.com/blog/time-for-something-new/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://robhar.com/blog/time-for-something-new/</guid>
+      <description>I started out as a graphic designer doing mostly print/branding for a company that I started with a friend, right after we finished school. At the time, around the internet bubble, there was an increasing demand for websites, so we got into programming for the web. After four years we decided to explore more of the world. I started freelancing as a programmer and my friend started working for a other company.</description>
     </item>
     
     <item>
