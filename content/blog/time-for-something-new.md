@@ -1,7 +1,7 @@
 ---
 draft: false
 author: "Robert den Harink"
-date: 2017-11-19
+date: 2018-01-02
 title: Time for something new
 subtitle: Leaving my discomfort zone.
 tags: [mindnote, startup]
